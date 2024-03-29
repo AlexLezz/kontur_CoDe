@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   // Карта Яндекса
-  ymaps.ready(init);
+ymaps.ready(init);
 function init() {
   const myMap = new ymaps.Map(
     "map",
@@ -42,3 +42,33 @@ function init() {
 Fancybox.bind("[data-fancybox]", {
   });
 });
+
+// modal
+var callingModal = document.getElementById("callingModal");
+// var btn = document.getElementById("myBtn");
+var close = document.getElementsByClassName("close")[0];
+// btn.onclick = function() {
+//   callingModal.style.display = "block";
+//   document.body.style.overflow = "hidden";
+// }
+
+var modalBtn = document.querySelectorAll('.calling-item__btn');
+for (var i = 0; i < modalBtn.length; i++) {
+    modalBtn[i].onclick = function() {
+        callingModal.style.display = "block";
+        document.body.style.overflow = "hidden";
+    }
+}
+
+
+close.onclick = function() {
+  callingModal.style.display = "none";
+  document.body.style.overflow = "visible";
+}
+
+window.onclick = function(event) {
+  if (event.target == callingModal) {
+    callingModal.style.display = "none";
+    document.body.style.overflow = "visible";
+  }
+}
