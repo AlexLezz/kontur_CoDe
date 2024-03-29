@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link href="./css/style.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <!-- <script src="./js/inputmask.min.js" defer></script> -->
+    <script src="./js/inputmask.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU" defer></script>
     <script src="./js/script.js" defer></script>
@@ -19,35 +19,38 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header-conv">
             <div class="row header-container">
-                <div class="col-lg-1 header-container__link">
+                <div class="col-sm-1 col-xs-1 header-container__link">
                     <img src="./img/logo.svg" alt="CoDe" class="header__logo" />
                 </div>
-                <nav class="col-lg header-nav">
-                    <ul class="list-reset header-nav-list">
-                        <li class="header-nav-list__item">
-                            <a href="#about">Чему вы&nbsp;научитесь</a>
+                <nav class="col-sm col-xs header-nav menu-wrap">
+                    <ul class="list-reset header-nav-list menu">
+                        <li class="header-nav-list__item item">
+                            <a class="js-menu-link" href="#about">Чему вы&nbsp;научитесь</a>
                         </li>
-                        <li class="header-nav-list__item">
-                            <a href="#detail">Процесс обучения</a>
+                        <li class="header-nav-list__item item">
+                            <a class="js-menu-link" href="#detail">Процесс обучения</a>
                         </li>
-                        <li class="header-nav-list__item"><a href="#">Стоимость</a></li>
-                        <li class="header-nav-list__item"><a href="#footer">Контакты</a></li>
+                        <li class="header-nav-list__item item"><a class="js-menu-link" href="#">Стоимость</a></li>
+                        <li class="header-nav-list__item item"><a class="js-menu-link" href="#footer">Контакты</a></li>
                     </ul>
                 </nav>
-                <div class="col-lg-2 header-number">
+                <div class="col-sm-2 col-xs-2 header-number">
                     <a href="tel:+74993489396" class="header-number__link">+7 (499) 348 93 96</a>
                 </div>
+                <button class="btn-reset burger">
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
     <main class="main">
         <section class="calling" id="calling">
             <div class="container swiper calling-container" id="callingSwiper">
-                <div class="row swiper-wrapper calling-container-row">
-                    <div class="swiper-slide calling-item">
-                        <div class="col-lg-7  calling-item-info">
+                <div class="swiper-wrapper row calling-container-row">
+                    <div class="col-12 swiper-slide calling-item">
+                        <div class="col-md-7 col-sm-12 col-xs-12 calling-item-info">
                             <div class="calling-item-info-main">
                                 <h1 class="calling-item__title">
                                     Школа <span class="calling-item__staples">{</span><span
@@ -55,22 +58,22 @@
                                         class="calling-item__staples">}</span> для тех, кому нужны реальные навыки,
                                     а&nbsp;не&nbsp;просто сертификат
                                 </h1>
-                                <p class="col-lg-6 calling-item__descr">
+                                <p class="col-md-6 col-sm-12 col-xs-12 calling-item__descr">
                                     Закажите звонок, и&nbsp;наш специалист свяжется с вами
                                     в&nbsp;ближайшее время
                                 </p>
                             </div>
                             <button class="btn calling-item__btn">Заказать звонок</button>
                         </div>
-                        <div class="calling-item-content">
+                        <div class="col-md-7 col-sm-12 col-xs-12 calling-item-content">
                             <img src="./img/calling-1.svg" class="calling-item-content__img" alt="">
                         </div>
                     </div>
-                    <div class="swiper-slide calling-item">
-                        <div class="col-lg-7 calling-item-info">
+                    <div class="col-12 swiper-slide calling-item">
+                        <div class="col-md-7 col-sm-12 col-xs-12 calling-item-info">
                             <div class="calling-item-info-main">
-                                <h1 class="col-lg-6 calling-item__title">Обучение через&nbsp;практику</h1>
-                                <p class="col-lg-6 calling-item__descr">
+                                <h1 class="col-md-6 calling-item__title">Обучение через&nbsp;практику</h1>
+                                <p class="col-md-6 col-sm-12 col-xs-12 calling-item__descr">
                                     Всё, что вы&nbsp;узнали, вы&nbsp;тут&nbsp;же начинаете
                                     применять на&nbsp;практике. Вы&nbsp;сразу видите результаты своего&nbsp;труда.
                                 </p>
@@ -81,13 +84,13 @@
                             <img src="./img/calling-2.svg" class="calling-item-content__img" alt="">
                         </div>
                     </div>
-                    <div class="swiper-slide calling-item">
-                        <div class="col-lg-7 calling-item-info">
+                    <div class="col-12 swiper-slide calling-item">
+                        <div class="col-md-7 col-sm-12 col-xs-12 calling-item-info">
                             <div class="calling-item-info-main">
                                 <h1 class="calling-item__title">
                                     Весь материал разбит на&nbsp;небольшие уроки
                                 </h1>
-                                <p class="col-lg-6 calling-item__descr">
+                                <p class="col-md-6 col-sm-12 col-xs-12 calling-item__descr">
                                     Теория и&nbsp;практика подаются маленькими порциями. Так вам
                                     будет легче усваивать новые знания.
                                 </p>
@@ -106,12 +109,12 @@
         <section class="about" id="about">
             <div class="container about-container">
                 <div class="row">
-                    <div class="col-lg-12 about-container-title">
+                    <div class="col-12 about-container-title">
                         <h1 class="about-container__title">Обучение&nbsp;в&nbsp;CoDe&nbsp;&mdash;&nbsp;это удобно
                             и&nbsp;результативно</h1>
                     </div>
-                    <ul class="list-reset col-lg-12 about-list">
-                        <li class="col-lg-3 about-list__item">
+                    <ul class="list-reset col-sm-12 col-xs-12 about-list">
+                        <li class="col-md-3 col-sm-5 col-xs-6 about-list__item">
                             <div class="about-list-content">
                                 <img src="./img/about-1.svg" alt="" class="about-list-content__img">
                             </div>
@@ -121,7 +124,7 @@
                                 больших проектов
                             </p>
                         </li>
-                        <li class="col-lg-3 about-list__item">
+                        <li class="col-md-3 col-sm-5 col-xs-6 about-list__item">
                             <div class="about-list-content">
                                 <img src="./img/about-2.svg" alt="" class="about-list-content__img">
                             </div>
@@ -131,7 +134,7 @@
                                 виток за&nbsp;витком
                             </p>
                         </li>
-                        <li class="col-lg-3 about-list__item">
+                        <li class="col-md-3 col-sm-5 col-xs-6 about-list__item">
                             <div class="about-list-content">
                                 <img src="./img/about-3.svg" alt="" class="about-list-content__img">
                             </div>
@@ -143,7 +146,7 @@
                                 мира
                             </p>
                         </li>
-                        <li class="col-lg-3 about-list__item">
+                        <li class="col-md-3 col-sm-5 col-xs-6 about-list__item">
                             <div class="about-list-content">
                                 <img src="./img/about-4.svg" alt="" class="about-list-content__img">
                             </div>
@@ -152,7 +155,7 @@
                                 Учитесь в&nbsp;любое время в&nbsp;удобном для вас темпе
                             </p>
                         </li>
-                        <li class="col-lg-3 about-list__item">
+                        <li class="col-md-3 col-sm-5 col-xs-6 about-list__item">
                             <div class="about-list-content">
                                 <img src="./img/about-5.svg" alt="" class="about-list-content__img">
                             </div>
@@ -163,7 +166,7 @@
                                 Задавайте вопросы и&nbsp;отправляйте свой код на&nbsp;проверку
                             </p>
                         </li>
-                        <li class="col-lg-3 about-list__item">
+                        <li class="col-md-3 col-sm-5 col-xs-6 about-list__item">
                             <div class="about-list-content">
                                 <img src="./img/about-6.svg" alt="" class="about-list-content__img">
                             </div>
@@ -173,7 +176,7 @@
                                 а&nbsp;не&nbsp;за&nbsp;весь курс сразу
                             </p>
                         </li>
-                        <li class="col-lg-3 about-list__item">
+                        <li class="col-md-3 col-sm-5 col-xs-12 about-list__item">
                             <div class="about-list-content">
                                 <img src="./img/about-7.svg" alt="" class="about-list-content__img">
                             </div>
@@ -190,13 +193,13 @@
         <section class="detail" id="detail">
             <div class="container detail-container">
                 <div class="row">
-                    <div class="col-lg-12 detail-content">
-                        <div class="col-lg-4 detail-content-img">
+                    <div class="col-12 detail-content">
+                        <div class="col-lg-4 col-xs-12 detail-content-img">
                             <img src="./img/detail-1.jpg" class="detail-content__img" alt="Люди работают" />
                         </div>
-                        <div class="col-lg-8 detail-content-info">
+                        <div class="col-lg-8 col-xs-12 detail-content-info">
                             <h2 class="detail-content__title">Помощь и&nbsp;поддержка</h2>
-                            <p class="col-lg-6 detail-content__descr">
+                            <p class="col-sm-6 col-sm-12 detail-content__descr">
                                 Если в&nbsp;процессе обучения возникнут сложности,&nbsp;вы всегда сможете задать вопрос
                                 своему наставнику.
                             </p>
@@ -208,8 +211,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-12 detail-content">
-                        <div class="col-lg-8 detail-content-info">
+                    <div class="col-12 detail-content">
+                        <div class="col-lg-8 col-xs-12 detail-content-info">
                             <h2 class="detail-content__title">Методика обучения</h2>
                             <p class="col-lg-9 detail-content__descr">
                                 Весь учебный материал структурирован по&nbsp;принципу
@@ -221,7 +224,7 @@
                                 важного.
                             </p>
                         </div>
-                        <div class="col-lg-4 detail-content-img">
+                        <div class="col-lg-4 col-xs-12 detail-content-img">
                             <img src="./img/detail-2.jpg" class="detail-content__img" alt="Люди работают" />
                         </div>
                     </div>
@@ -234,8 +237,8 @@
                     <img src="./img/gallery-2.jpg" />
                   </a> -->
                 <div class="row">
-                    <div class="col-lg-12 gallery-main">
-                        <div class="col-lg-6 gallery-main-big">
+                    <div class="col-12 gallery-main">
+                        <div class="col-sm-6 col-xs-12 gallery-main-big">
                             <div class="gallery-main-big-content">
                                 <a class="gallery-main-big-content__link" href="./img/gallery-1.jpg"
                                     data-fancybox="gallery" data-caption="Обучаемся вместе!">
@@ -243,26 +246,26 @@
                                 </a>
                             </div>
                         </div>
-                        <ul class="col-lg-6 list-reset gallery-main-small">
-                            <li class="gallery-main-small-content">
+                        <ul class="col-sm-6 col-xs-12 list-reset gallery-main-small">
+                            <li class="col-6 gallery-main-small-content">
                                 <a class="gallery-main-small-content__link" href="./img/gallery-2.jpg"
                                     data-fancybox="gallery" data-caption="Обучение языкам программирования!">
                                     <img class="gallery-main-small-content__img" src="./img/gallery-2.jpg" />
                                 </a>
                             </li>
-                            <li class="gallery-main-small-content">
+                            <li class="col-6 gallery-main-small-content">
                                 <a class="gallery-main-small-content__link" href="./img/gallery-3.jpg"
                                     data-fancybox="gallery" data-caption="Тонны полезной практики!">
                                     <img class="gallery-main-small-content__img" src="./img/gallery-3.jpg" />
                                 </a>
                             </li>
-                            <li class="gallery-main-small-content">
+                            <li class="col-6 gallery-main-small-content">
                                 <a class="gallery-main-small-content__link" href="./img/gallery-4.jpg"
                                     data-fancybox="gallery" data-caption="Работа с данными!">
                                     <img class="gallery-main-small-content__img" src="./img/gallery-4.jpg" />
                                 </a>
                             </li>
-                            <li class="gallery-main-small-content">
+                            <li class="col-6 gallery-main-small-content">
                                 <a class="gallery-main-small-content__link" href="./img/gallery-5.jpg"
                                     data-fancybox="gallery" data-caption="Обучаем с малых лет!">
                                     <img class="gallery-main-small-content__img" src="./img/gallery-5.jpg" />
@@ -274,17 +277,17 @@
             </div>
         </section>
         <section class="map">
-            <div class="container">
+            <div class="container map-container">
                 <div class="row">
-                    <div class="col-lg-12 map-set" id="map"></div>
+                    <div class="col-12 map-set" id="map"></div>
                 </div>
             </div>
         </section>
         <footer class="footer" id="footer">
             <div class="container footer-container">
                 <div class="row">
-                    <div class="col-lg-12 footer-links">
-                        <div class="col-lg-7 footer-links-social">
+                    <div class="col-12 footer-links">
+                        <div class="col-lg-7 col-sm-5 col-xs-12 footer-links-social">
                             <div class="footer-links-social-logo">
                                 <img src="./img/logo.svg" alt="CoDe" class="footer__logo" />
                                 <p class="footer-links__descr">Школа программирования</p>
@@ -378,7 +381,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <nav class="col-lg-3 footer-links-nav">
+                        <nav class="col-lg-3 col-sm-5 col-xs-12 footer-links-nav">
                             <ul class="list-reset footer-links-nav-list">
                                 <li class="footer-links-nav-list__item">
                                     <a href="#about">Чему вы&nbsp;научитесь</a>
@@ -389,21 +392,26 @@
                                 <li class="footer-links-nav-list__item"><a href="#">Регистрация</a></li>
                             </ul>
                         </nav>
-                        <div class="col-lg-2 footer-links-contacts">
+                        <div class="col-lg-2 col-sm-2 col-xs-12 footer-links-contacts">
                             <a href="tel:+79999999999" class="footer-links-contacts__tel">+7 (999) 999 99 99</a>
                             <a href="email:info@code.ru" class="footer-links-contacts__email">info@code.ru</a>
                         </div>
                     </div>
                     <div class="footer-docs">
-                        <p class="col-lg-6 footer-docs__copyright">
+                        <p class="col-lg-6 col-sm-6 footer-docs__copyright">
                             &copy;&nbsp;2023&nbsp;&mdash; Все права защищены
                         </p>
-                        <div class="col-lg-5 footer-docs-documents">
-                            <a href=""
-                                class="footer-docs-documents__link footer-docs-documents__agreement">Пользовательское
-                                соглашение</a>
-                            <a href="" class="footer-docs-documents__link footer-docs-documents__policy">Политика
-                                конфиденциальности</a>
+                        <div class="col-lg-5 col-sm-6 footer-docs-documents">
+                            <div class="footer-docs-documents-link">
+                                <a href=""
+                                    class="footer-docs-documents__link footer-docs-documents__agreement">Пользовательское
+                                    соглашение</a>
+                            </div>
+                            <div class="footer-docs-documents-link">
+                                <a href="" class="footer-docs-documents__link footer-docs-documents__policy">Политика
+                                    конфиденциальности</a>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -415,22 +423,23 @@
             <span class="close">&times;</span>
             <h2 class="modal-contact__title">Заказать звонок</h2>
             <form action="" class="modal-contact-form">
-                <label for="" class="modal-contact-form-item">
+                <span for="" class="modal-contact-form-item">
                     <p class="modal-contact-form-item__descr">Имя</p>
                     <input type="text" class="modal-contact-form-item__input" placeholder="Ваше имя" />
-                </label>
-                <label for="" class="modal-contact-form-item">
+                </span>
+                <span for="" class="modal-contact-form-item">
                     <p class="modal-contact-form-item__descr">Телефон</p>
-                    <input type="text" class="modal-contact-form-item__input" placeholder="+7 ХХХ-ХХХ-ХХ-ХХ" />
-                </label>
-                <label for="" class="modal-contact-form-item">
+                    <input type="tel" class="modal-contact-form-item__input" placeholder="+7 ХХХ-ХХХ-ХХ-ХХ" />
+                </span>
+                <span for="" class="modal-contact-form-item">
                     <p class="modal-contact-form-item__descr">Email</p>
-                    <input type="text" class="modal-contact-form-item__input" placeholder="mail@site.com" />
-                </label>
-                <label for="" class="modal-contact-form-item">
+                    <input type="email" class="modal-contact-form-item__input" placeholder="mail@site.com" />
+                </span>
+                <span for="" class="modal-contact-form-item">
                     <p class="modal-contact-form-item__descr">Сообщение</p>
-                    <textarea type="text" class="modal-contact-form-item__input modal-contact-form-item__message" placeholder="Ваше сообщение ..."></textarea>
-                </label>
+                    <textarea type="text" class="modal-contact-form-item__input modal-contact-form-item__message"
+                        placeholder="Ваше сообщение ..."></textarea>
+                </span>
                 <p class="modal-contact-form__policy">
                     Нажимая кнопку &laquo;Отправить&raquo;, соглашаюсь с <a href=""
                         class="modal-contact-form__link">политикой конфидениальности</a>
