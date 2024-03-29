@@ -141,7 +141,7 @@ textarea:focus {
     padding-bottom: 30px;
 }
 
-.header-container__link {
+.header-container-link {
     padding-top: 17px;
 }
 
@@ -435,6 +435,10 @@ textarea:focus {
     width: 257px;
     display: flex;
     margin-bottom: 37px;
+}
+
+.footer-links-social-logo__link {
+    display: flex;
 }
 
 .footer__logo {
@@ -1044,7 +1048,7 @@ textarea:focus {
         padding: 8px 17px;
     }
 
-    .header-container__link {
+    .header-container-link {
         padding: 0;
     }
 
@@ -1281,7 +1285,7 @@ textarea:focus {
         line-height: 18px;
     }
 
-    .header-container__link {
+    .header-container-link {
         width: 64px;
     }
 
